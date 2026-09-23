@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <p style="color: springgreen; font-size: 14px;">Este es un parrafo con CSS en linea</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIH EN JUVENTUD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/slide1.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<!-------BODY-------->
+
+<body>
+
+    <!-------HEADER-------->
+    <header>
+        <a href="#inicio" class="logo">
+                <img src="img/IMG3.png" width="150px" alt="LOGO VIH">
+        </a>
+    <nav>
+    <a href="#info">informacion</a>        
+    <a href="#test">testimonios</a>
+    <a href="#video">videos</a>
+    <a href="#galeria">galeria</a>
+    <a href="#enti">entidades</a>
+    </nav>
+
+        <button class="menu-btn" aria-label="menu"> ☰ </button>
+    </header>
+
+   <!--------ejemplo botones--------->
+   
+   <section id="ejemplo-botones">
+    <h2>Ejemplo</h2>
+    <button class="boton-ejemplo">haz click</button>
+   </section>
+
+
+
+
+
+    <!-------slider------->
+
+    <section class="slider" id"inicio">
+
+    <div class="slide activo slide-1">
+        <img src="img/slide1.png" width="1500px" alt="EL VIH no distingue edad" class="slide-bg">
+        <div class="slide-overlay">
+            <div class="slide-contenido">
+                <h2> ROMPE <span> el estigma </span> </h2>
+                <p1>El VIH no define a las personas, el respeto sí.</p1>
+                <a href="#info" class="btn"> Conoce más </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide activo slide-1">
+        <img src="img/slide2.png" width="1500px" alt="prevencion es vida" class="slide-bg">
+        <div class="slide-overlay">
+            <div class="slide-contenido">
+                <h2> PREVENCIÓN <span> ES VIDA</span> </h2>
+                <p1>Pedir ayuda es un acto de valentía y cuidado.</p1>
+                <a href="#entid" class="btn"> busca ayuda </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide activo slide-1">
+        <img src="img/slide3.png" width="1500px" alt="LAS VOCES DEL VIH" class="slide-bg">
+        <div class="slide-overlay">
+            <div class="slide-contenido">
+                <h2> VOCES <span> DE REFLEXIÓN </span> </h2>
+                <p1>Hablo desde mi vida: tengo VIH, tengo sueños y merezco respeto..</p1>
+                <a href="#test" class="btn"> Ver testimonios </a>
+            </div>
+        </div>
+    </div>
+
+<div class="slider-flechas">
+    <button class="flecha" onclick="anteriorSlide()"> &#8592; </button>
+    <button class="flecha" onclick="siguienteSlide()"> &#8594; </button>
+</div>
+
+<div class="slider-puntos">
+    <button class="punto activo" onclick="mostrarSlide(0)"></button>
+    <button class="punto" onclick="mostrarSlide(1)"></button>
+    <button class="punto" onclick="mostrarSlide(2)"></button>
+</div>
+
+    </section>
+
+     <!------INOFRMACION------>
+
+    <section id="info">
+
+        <div class="titiulo-seccion">
+            <h2>¿Qué debe saber del VIH?</h2>
+        <div class="linea"></div>
+            <p>  El VIH, todo lo que deben saber los jovenes colombianos</p>
+        </div>
+
+    <div class="fotos-grid">
+
+        <div class="foto-card">
+            <div class="imagen bg-1">
+
+<img src="img/img1.png" width="400px" alt="¿Qué es el VIH?" class="foto-img">
+
+            </div>
+            <div class="info">
+                <h3> ¿Qué es el VIH? </h3>
+                <p> El VIH es el virus de la inmunodeficiencia humana. Ataca las células CD4 del sistema inmunitario, debilita las defensas del cuerpo y se transmite por sangre, semen, fluidos vaginales, rectales y leche materna; sin tratamiento, puede avanzar a sida. </p>
+            </div>
+
+ <div class="imagen bg-2">
+
+<img src="img/img2.png" width="400px" class="foto-img">
+
+            </div>
+            <div class="info">
+                <h3> ¿Cómo prevenir? </h3>
+                <p> Se previene usando condón en las relaciones sexuales, no compartiendo agujas y considerando PrEP o PEP si hay riesgo de exposición. También ayuda hacerse pruebas de VIH e ITS con regularidad. </p>
+            </div>
+
+
+ <div class="imagen bg-3">
+
+<img src="img/img3.png" width="400px" class="foto-img">
+
+            </div>
+            <div class="info">
+                <h3> formas de deteccion </h3>
+                <p> Se detecta con pruebas de sangre, saliva u orina, pero las más usadas son las de anticuerpos, antígeno/anticuerpo y ácido nucleico (NAT). Las de antígeno/anticuerpo suelen detectar el VIH antes que las de solo anticuerpos </p>
+            </div>
+           
+ <div class="imagen bg-4">
+
+<img src="img/img4.png" width="400px" class="foto-img">
+
+            </div>
+            <div class="info">
+                <h3> Tratamiento Antirretroviral (ARV) </h3>
+                <p> El tratamiento antirretroviral (ARV o TAR) es una combinación de medicamentos que controla el VIH, reduce la carga viral y ayuda a mantener el sistema inmunitario fuerte. No cura la infección, pero debe tomarse de forma continua y lo antes posible tras el diagnóstico; también puede reducir mucho el riesgo de transmisión. </p>
+            </div>
+
+            
+
+
+        </div>
+
+    </div>
+
+
+    </section>
+
+    <!--testimonios-->
+
+    <section id="test">
+         <div class="titiulo-seccion">
+            <h2>testimonios</h2>
+        <div class="linea"></div>
+        <P>Los testimonios sobre el VIH ayudan a visibilizar experiencias reales, romper estigmas y promover la empatía hacia quienes viven con este diagnóstico.</P>
+    </div>
+
+    <div class="testimonios-grid">
+
+
+        <div class="testimonio">
+            <div class="comillas"></div>
+            <p>  Dayana - 23 años: "Me diagnosticaron VIH hace ocho años. Al principio pensé que mi vida había terminado. Lloraba todos
+los días. Pero empecé el tratamiento, me apoyé en mi familia y hoy tengo una vida completamente
+normal. Trabajo, tengo pareja, salgo de viaje. El VIH no me define. Lo que me define es que no me
+rendí."</p>
+            <div class="autor">
+                <div class="avatar">D</div>
+                <div class="autor-info">
+            <span>Dayana, 23 años</span>
+            <span> Bogotá, Usaquen</span>
+                </div>
+            </div>
+        </div>
+
+
+   <div class="test">
+            <div class="comillas"></div>
+            <p>  Andres - 30 años: "Supe que era VIH positivo a los 21 años, durante una prueba de rutina. Fue un shock enorme. Sentí
+vergüenza, miedo al rechazo. Pero encontré un grupo de apoyo que cambió todo. Hoy soy
+indetectable, llevo mi tratamiento al día y me dedico a informar a otros jóvenes. Nadie debería vivir esto
+solo."</p>
+            <div class="autor">
+                <div class="avatar">A</div>
+                <div class="autor-info">
+            <span>Andres, 30 años</span>
+            <span> Medellin </span>
+                </div>
+            </div>
+        </div>
+
+
+   <div class="test">
+            <div class="comillas"></div>
+            <p> Carlos - 45 años: "Mi esposa falleció hace años por complicaciones del SIDA porque no sabía que tenía el virus. Yo
+también me infecté, pero a tiempo me detectaron y comencé el tratamiento. Quiero que la gente pierda el miedo y se haga la prueba. Detectarlo a tiempo lo cambia
+todo."</p>
+            <div class="autor">
+                <div class="avatar">C</div>
+                <div class="autor-info">
+            <span>Carlos, 45 años</span>
+            <span> Bogotá, chapinero </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+
+                <!------video------->
+
+    <section id="video">
+        <div class="titiulo-seccion">
+            <h2>Video de informacion</h2>
+        <div class="linea"></div>
+        <p>Este video te da la informacion del VIH para tu cuidado y prevencion </p>
+    </div>
+
+    <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/W26KvUIZw8k?si=RGXW_QAbhM4xLUge" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+
+    <!--------------GALERIA--------------->
+    <section id="galeria">
+
+
+        <div class="titiulo-seccion">
+            <h2>Galeria de informacion</h2>
+        <div class="linea"></div>
+        <p> imagenes de prevencion, campañas y cuidado contra el VIH</p>
+    </div>
+
+    <div class="galeria-grid">
+
+
+<div class="galeria-item" data-src="img/Gal1.png" data-alt="Campaña de prevencion VIH">
+    <div class="img-placeholder g1">
+        <img src="img/Gal1.png" alt="">
+    </div>
+    <div class="overlay">🔍</div>
+
+
+    
+<div class="img-placeholder g2">
+        <img src="img/Gal2.png" alt="">
+    </div>
+    <div class="overlay">🩺</div>
+
+
+<div class="img-placeholder g3">
+        <img src="img/Gal3.png" alt="">
+    </div>
+    <div class="overlay">🧬</div>
+
+
+<div class="img-placeholder g4">
+        <img src="img/Gal4.png" alt="">
+    </div>
+    <div class="overlay">💉</div>
+
+
+
+<div class="img-placeholder g5">
+        <img src="img/Gal5.png" alt="">
+    </div>
+    <div class="overlay">🩹</div>
+
+
+<div class="img-placeholder g6">
+        <img src="img/Gal6.png" alt="">
+    </div>
+    <div class="overlay">💊</div>
+    </div>
+</div>
+    </section>
+
+    <!--------lightbox--------->
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-cerrar" onclick="cerrarLightbox()">X</button>
+        <div class="lightbox-img-real" id="lightbox-img-real" src="" alt="">
+        </div>
+    </div>
+
+    <!------------entidades--------------->
+
+    <section id="enti">
+        <div class="titiulo-seccion">
+            <h2>Entidades de ayuda</h2>
+        <div class="linea"></div>
+        <p> Aqui encontraras entidades con las cuales puedes afrontar el VIH </p>
+    </div>  
+
+    <div class="entidades-grid">
+
+        <a href="https://fundacioneudes.co/quienes-somos" target="_blank">
+            <div class="icono">🔬</div>
+            <h3>Fundacion eudes</h3>
+            <p> fundacion especializada de prevencion de VIH </p>
+            <h6> OJALA SE MUERAN ♥️</h6>
+        </a>
+    </div>
+
+        <a href="https://ahfcolombia.org.co/" target="_blank">
+            <div class="icono">🩵</div>
+            <h3>Fundacion ahf</h3>
+            <p> entidad encargada de hacer pruebas para la prevencion de VIH 🩵</p>
+            
+        </a>
+    </div>
+
+    <a href="https://cls.org.co/" target="_blank">
+            <div class="icono">💛🩷</div>
+            <h3>Fundacion corpoSida</h3>
+            <p> fundacion especializada que ofrece prevencion, diagnostico, controles y consulta medica </p>     
+        </a>
+    </div>
+
+ <a href="https://www.reviva.org.co/quienes-somos/nosotros/" target="_blank">
+            <div class="icono">🎗️</div>
+            <h3>Fundacion reviva</h3>
+            <p> trabaja en investigación clínica y epidemiológica sobre VIH/Sida en Colombia.</p>     
+        </a>
+    </div>
+
+ <a href= "https://planetaamor.co/quienes/" target="_blank">
+            <div class="icono">❤️‍🩹</div>
+            <h3>Fundación Planeta Amor</h3>
+            <p> atiende a niñas, niños y adolescentes infectados o afectados por VIH/Sida</p>     
+        </a>
+    </div>
+
+     <a href="https://colombia.unfpa.org/es/topics/vih-y-sida" target="_blank">
+            <div class="icono">🩼</div>
+            <h3>Fundación unfpa</h3>
+            <p>está enfocada en derechos sexuales y reproductivos, salud materna, prevención de violencias de género y apoyo a adolescentes y jóvenes.</p>     
+            </a>
+        </div>
+  </section>
+
+        <style>
+            .block{
+                display: block;
+                width: 100%;
+                background-color: cornflowerblue;
+                margin-bottom: 10px;
+            }
+
+            .inline{
+                display: inline;
+                background-color: chartreuse;
+            }
+            .inline-block{
+                display: inline-block;
+                width: 150px;
+                height: 100px;
+                background-color: blueviolet;
+                margin: 10px;
+            }
+            .flex-container{
+                display: flex;
+                background-color: aliceblue;
+            }
+
+            .flex-item{
+                background-color: brown;
+                padding: 20px;
+                margin: 10px;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                background-color: azure;
+            }
+            .grid-item{
+                background-color: bisque;
+                padding: 20px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="block">Conoce más del VIH</div>
+        <span class="inline">¿Qué es?</span>
+        <div class="inline-block">virus de inmunodeficiencia humana</div>
+        <div class="flex-container">
+            <div class="flex-item">Tratamientos de prevencion contra el VIH</div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">Terapia antirretroviral (TAR)
+El tratamiento estándar para personas con VIH incluye una combinación de tres medicamentos de al menos dos clases diferentes de antirretrovirales. Este régimen se toma de forma continua y, cuando se sigue correctamente, reduce la carga viral a niveles indetectables, lo que significa que el virus no se transmite por vía sexual y la persona puede vivir una vida larga y saludable.</div>
+            <div class="grid-item">Profilaxis preexposición (PrEP)
+Para personas sin VIH pero con riesgo de contraerlo, existe la PrEP, un medicamento preventivo que reduce el riesgo de infección en aproximadamente un 99% cuando se toma según lo indicado.</div>
+            <div class="grid-item">Importancia del diagnóstico temprano y la adherencia
+El diagnóstico temprano y el inicio inmediato del TAR son clave para reducir la mortalidad relacionada con el sida y prevenir la transmisión del virus. La adherencia estricta al tratamiento es fundamental para evitar la farmacorresistencia, especialmente a fármacos como el dolutegravir.
+
+</div>
+            <div class="grid-item">Tratamientos inyectables de larga duración
+Además de las pastillas diarias, existen opciones inyectables que se administran cada uno o dos meses, lo que facilita la adherencia al tratamiento. En 2026 se están desarrollando nuevos antirretrovirales experimentales que podrían administrarse solo dos veces al año.
+
+</div>
+        </div>
+    </body>
+
+    <body>
+        <div class="infografia">
+            <img src="img/VIH_en_la_juventud_colombiana.png">
+        </div>
+    </body> 
+    
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  :root{
+    --bg:#F1F3EF;
+    --card:#FFFFFF;
+    --ink:#16221F;
+    --muted:#5B6B66;
+    --primary:#0E4F49;
+    --primary-light:#DCEAE7;
+    --accent:#C1443B;
+    --accent-light:#F6E1DF;
+    --gold:#C98A3E;
+    --gold-light:#F5E7D3;
+    --line:#D8DDD5;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.01em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:var(--primary);}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px;}
+
+  /* Thread signature: a vertical ribbon-accent line running through sections */
+  .thread{
+    position:absolute;left:0;top:0;bottom:0;width:3px;
+    background:linear-gradient(180deg,var(--accent),var(--gold),var(--primary));
+    border-radius:3px;
+  }
+  section{position:relative;padding-left:28px;}
+
+  header.hero{
+    padding:120px 24px 90px;
+    background:var(--primary);
+    color:#F1F3EF;
+  }
+  header.hero .wrap{padding-left:28px;position:relative;}
+  header.hero .thread{background:linear-gradient(180deg,var(--gold),var(--accent));}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;letter-spacing:0.08em;text-transform:uppercase;
+    color:#B9D3CD;margin-bottom:18px;
+  }
+  header.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.08;max-width:760px;}
+  header.hero p.lead{margin-top:22px;max-width:620px;font-size:18px;color:#D6E5E2;}
+  .hero-stat{
+    margin-top:56px;display:flex;gap:52px;flex-wrap:wrap;
+  }
+  .hero-stat .num{font-family:'IBM Plex Mono',monospace;font-size:clamp(34px,4vw,52px);font-weight:600;color:#F5D9A6;}
+  .hero-stat .label{font-size:13px;color:#B9D3CD;max-width:200px;margin-top:6px;}
+
+  main{padding:70px 0;}
+  section{margin-bottom:88px;}
+  .kicker{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:10px;
+  }
+  h2{font-size:clamp(24px,3vw,32px);margin-bottom:14px;}
+  section > p.intro{color:var(--muted);max-width:640px;margin-bottom:32px;font-size:16px;}
+
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px;
+  }
+  .grid-2{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media(max-width:760px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+
+  .stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px;}
+  @media(max-width:760px){.stat-row{grid-template-columns:1fr 1fr;}}
+  .stat-box{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;
+  }
+  .stat-box .num{font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;color:var(--primary);}
+  .stat-box .cap{font-size:13px;color:var(--muted);margin-top:4px;}
+
+  canvas{max-width:100%;}
+
+  .region-list{list-style:none;}
+  .region-list li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;}
+  .region-list li:last-child{border-bottom:none;}
+  .region-list .pct{font-family:'IBM Plex Mono',monospace;color:var(--primary);font-weight:600;}
+
+  .prevent-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  @media(max-width:760px){.prevent-grid{grid-template-columns:1fr;}}
+  .prevent-card{
+    background:var(--primary-light);border-radius:var(--radius);padding:22px;
+  }
+  .prevent-card h3{font-size:17px;color:var(--primary);margin-bottom:8px;}
+  .prevent-card p{font-size:14.5px;color:#33423E;}
+  .prevent-card.accent{background:var(--gold-light);}
+  .prevent-card.accent h3{color:#8A5A1E;}
+
+  .note{
+    border-left:3px solid var(--accent);background:var(--accent-light);
+    padding:16px 20px;border-radius:0 10px 10px 0;font-size:14.5px;color:#5A2622;margin-top:28px;
+  }
+
+  /* Chatbot */
+  .bot-wrap{
+    background:var(--ink);color:#EDEFE9;border-radius:18px;padding:0;overflow:hidden;
+  }
+  .bot-head{
+    padding:18px 22px;background:#0E1A17;display:flex;align-items:center;gap:10px;
+    font-family:'Space Grotesk',sans-serif;font-weight:500;
+  }
+  .bot-dot{width:9px;height:9px;border-radius:50%;background:#5DCAA5;}
+  #chatLog{
+    height:300px;overflow-y:auto;padding:18px 22px;display:flex;flex-direction:column;gap:12px;font-size:14.5px;
+  }
+  .msg{max-width:80%;padding:10px 14px;border-radius:12px;line-height:1.5;}
+  .msg.bot{background:#22322D;align-self:flex-start;border-bottom-left-radius:3px;}
+  .msg.user{background:var(--primary);align-self:flex-end;border-bottom-right-radius:3px;}
+  .bot-input{display:flex;border-top:1px solid #22322D;}
+  .bot-input input{
+    flex:1;background:transparent;border:none;padding:16px 22px;color:#EDEFE9;font-size:14.5px;outline:none;
+  }
+  .bot-input button{
+    background:var(--accent);border:none;color:#fff;padding:0 24px;cursor:pointer;font-weight:600;font-size:14px;
+  }
+  .bot-input button:hover{background:#A93830;}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;padding:0 22px 16px;}
+  .chip{
+    background:#22322D;color:#B9D3CD;border:none;border-radius:20px;padding:7px 14px;
+    font-size:12.5px;cursor:pointer;
+  }
+  .chip:hover{background:#2E4640;}
+
+  footer{
+    padding:40px 24px 60px;text-align:center;color:var(--muted);font-size:13px;
+  }
+  footer a{color:var(--muted);}
+</style>
+</head>
+
+
+<header class="hero">
+  <div class="wrap">
+    <div class="thread"></div>
+    <div class="eyebrow">Salud pública · Colombia</div>
+    <h1>El VIH en Colombia, en cifras y en contexto</h1>
+    <p class="lead">Un recorrido por los datos oficiales más recientes sobre el VIH en el país: quiénes se ven afectados, dónde, cómo se transmite y qué está funcionando para prevenirlo.</p>
+    <div class="hero-stat">
+      <div>
+        <div class="num">211.431</div>
+        <div class="label">personas con diagnóstico de VIH reportadas en Colombia al 31 de octubre de 2025</div>
+      </div>
+      <div>
+        <div class="num">14.169</div>
+        <div class="label">nuevos casos reportados a enero de 2025, una cifra estable frente a años anteriores</div>
+      </div>
+      <div>
+        <div class="num">40,5</div>
+        <div class="label">años: edad promedio de las personas diagnosticadas</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="tendencia">
+    <div class="thread"></div>
+    <div class="kicker">Tendencia</div>
+    <h2>Los nuevos diagnósticos se han estabilizado</h2>
+    <p class="intro">El total acumulado de personas diagnosticadas crece cada año porque se suman los casos nuevos a los ya existentes, pero el número de <strong>nuevos</strong> diagnósticos por año se mantiene relativamente estable desde 2023, según el Ministerio de Salud y la Cuenta de Alto Costo.</p>
+    <div class="card">
+      <canvas id="chartTendencia" height="110"></canvas>
+    </div>
+    <div class="note">El Ministerio de Salud ha aclarado que el aumento del total acumulado de casos <strong>no representa</strong> un repunte de nuevas infecciones: refleja una mejor capacidad del país para detectar, reportar y dar tratamiento a quienes ya vivían con el virus.</div>
+  </section>
+
+  <section id="perfil">
+    <div class="thread"></div>
+    <div class="kicker">Perfil demográfico</div>
+    <h2>¿Quiénes viven con VIH en Colombia?</h2>
+    <p class="intro">La mayoría de los casos se concentra en hombres jóvenes y adultos. Estos son los datos de sexo y del principal mecanismo de transmisión reportados por la Cuenta de Alto Costo.</p>
+    <div class="grid-2">
+      <div class="card">
+        <canvas id="chartSexo" height="220"></canvas>
+      </div>
+      <div class="card">
+        <canvas id="chartTransmision" height="220"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section id="geografia">
+    <div class="thread"></div>
+    <div class="kicker">Distribución geográfica</div>
+    <h2>¿En qué regiones se concentran los casos?</h2>
+    <p class="intro">Con corte al 31 de octubre de 2025, así se reparten las personas diagnosticadas por región del país.</p>
+    <div class="card">
+      <ul class="region-list">
+        <li><span>Región Central (incl. Antioquia, Valle del Cauca)</span><span class="pct">28,72%</span></li>
+        <li><span>Bogotá, D.C.</span><span class="pct">22,19%</span></li>
+        <li><span>Región Caribe</span><span class="pct">19,91%</span></li>
+        <li><span>Región Pacífica</span><span class="pct">15,19%</span></li>
+        <li><span>Región Oriental</span><span class="pct">12,40%</span></li>
+        <li><span>Amazonía-Orinoquía</span><span class="pct">1,59%</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="tratamiento">
+    <div class="thread"></div>
+    <div class="kicker">Tratamiento</div>
+    <h2>El tratamiento funciona y cada vez llega más rápido</h2>
+    <div class="stat-row">
+      <div class="stat-box"><div class="num">27 días</div><div class="cap">tiempo promedio entre el diagnóstico y el inicio del tratamiento</div></div>
+      <div class="stat-box"><div class="num">72%</div><div class="cap">de las personas en tratamiento antirretroviral están indetectables</div></div>
+      <div class="stat-box"><div class="num">35,4%</div><div class="cap">de los nuevos diagnósticos ya inician con esquemas de primera línea (2025)</div></div>
+      <div class="stat-box"><div class="num">95%</div><div class="cap">meta de tamización de VIH en mujeres gestantes, cumplida a nivel nacional</div></div>
+    </div>
+    <p class="intro" style="margin-bottom:0">Una persona en tratamiento antirretroviral que mantiene carga viral indetectable no transmite el virus por vía sexual: es el principio conocido como <strong>Indetectable = Intransmisible (I = I)</strong>.</p>
+  </section>
+
+  <section id="prevencion">
+    <div class="thread"></div>
+    <div class="kicker">Prevención</div>
+    <h2>Qué funciona para prevenir el VIH</h2>
+    <div class="prevent-grid">
+      <div class="prevent-card">
+        <h3>Preservativo</h3>
+        <p>Usado correctamente en cada relación sexual, reduce de forma muy significativa el riesgo de transmisión del VIH y de otras infecciones de transmisión sexual.</p>
+      </div>
+      <div class="prevent-card accent">
+        <h3>PrEP</h3>
+        <p>La Profilaxis Preexposición está disponible en Colombia desde 2022 para personas con mayor exposición al virus, y ha contribuido a estabilizar los nuevos diagnósticos.</p>
+      </div>
+      <div class="prevent-card accent">
+        <h3>Prueba de VIH</h3>
+        <p>Hacerse la prueba periódicamente permite un diagnóstico temprano: hoy en Colombia el tiempo entre diagnóstico e inicio de tratamiento es de solo 27 días en promedio.</p>
+      </div>
+      <div class="prevent-card">
+        <h3>Tratamiento como prevención</h3>
+        <p>Iniciar y mantener el tratamiento antirretroviral no solo protege la salud de la persona diagnosticada: al lograr carga viral indetectable, también evita nuevas transmisiones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="asistente">
+    <div class="thread"></div>
+    <div class="kicker">Asistente</div>
+    <h2>Resuelve tus dudas con el asistente</h2>
+    <p class="intro">Pregúntale al asistente sobre las cifras de esta página, cómo se transmite el VIH o cómo prevenirlo.</p>
+    <div class="bot-wrap">
+      <div class="bot-head"><span class="bot-dot"></span> Asistente VIH Colombia</div>
+      <div id="chatLog"></div>
+      <div class="chips">
+        <button class="chip" onclick="preguntaRapida('¿Cuántos casos hay en Colombia?')">Cifras actuales</button>
+        <button class="chip" onclick="preguntaRapida('¿Cómo se transmite el VIH?')">Transmisión</button>
+        <button class="chip" onclick="preguntaRapida('¿Cómo me protejo?')">Prevención</button>
+        <button class="chip" onclick="preguntaRapida('¿Dónde me hago la prueba?')">Hacerme la prueba</button>
+      </div>
+      <div class="bot-input">
+        <input id="chatInput" type="text" placeholder="Escribe tu pregunta..." onkeydown="if(event.key==='Enter')enviarMensaje()">
+        <button onclick="enviarMensaje()">Enviar</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Fuente de los datos: Cuenta de Alto Costo (CAC), boletín "Día mundial del VIH 2025", y Ministerio de Salud y Protección Social de Colombia, cifras preliminares al 31 de octubre de 2025.<br>
+  Este contenido tiene fines educativos y no reemplaza la consulta con un profesional de la salud.
+</footer>
+
+<script>
+  const dataYears = { labels:['2023 (a ene.)','2024 (a ene.)','2025 (a ene.)'], values:[14670,14555,14169] };
+  new Chart(document.getElementById('chartTendencia'), {
+    type:'bar',
+    data:{ labels:dataYears.labels, datasets:[{ label:'Nuevos casos reportados', data:dataYears.values, backgroundColor:'#0E4F49', borderRadius:6, maxBarThickness:70 }]},
+    options:{ plugins:{legend:{display:false}}, scales:{ y:{ beginAtZero:false, suggestedMin:13000, ticks:{color:'#5B6B66'}, grid:{color:'#E4E8E1'} }, x:{ ticks:{color:'#5B6B66'}, grid:{display:false} } } }
+  });
+
+  new Chart(document.getElementById('chartSexo'), {
+    type:'doughnut',
+    data:{ labels:['Hombres','Mujeres'], datasets:[{ data:[78.8,21.2], backgroundColor:['#0E4F49','#C98A3E'] }]},
+    options:{ plugins:{ legend:{position:'bottom', labels:{color:'#16221F'}}, title:{display:true,text:'Distribución por sexo',color:'#16221F',font:{size:14}} } }
+  });
+
+  new Chart(document.getElementById('chartTransmision'), {
+    type:'bar',
+    data:{ labels:['Sexual','Hombres que tienen sexo con hombres','Sustancias psicoactivas (no inyectadas)'],
+      datasets:[{ data:[92.83,41.73,4.99], backgroundColor:'#C1443B', borderRadius:6, maxBarThickness:40 }]},
+    options:{ indexAxis:'y', plugins:{legend:{display:false},title:{display:true,text:'Mecanismos de transmisión (%)',color:'#16221F',font:{size:14}}}, scales:{ x:{max:100,ticks:{color:'#5B6B66'},grid:{color:'#E4E8E1'}}, y:{ticks:{color:'#5B6B66',font:{size:11}},grid:{display:false}} } }
+  });
+
+  // Chatbot
+  const RESPUESTAS = [
+    { claves:['cuantos casos','cifras','cuantas personas'], texto:'Al 31 de octubre de 2025, Colombia reportó 211.431 personas diagnosticadas con VIH, y 14.169 nuevos casos a enero de 2025, una cifra estable frente a los años anteriores.' },
+    { claves:['como se transmite','transmision','contagia'], texto:'El principal mecanismo es el contacto sexual sin protección (92,83% de los casos). También puede transmitirse por compartir agujas y de madre a hijo durante el embarazo, el parto o la lactancia si no hay control adecuado.' },
+    { claves:['como me protejo','prevenir','prevencion'], texto:'Las estrategias más efectivas son: usar preservativo, hacerte la prueba con regularidad, considerar la PrEP si tienes mayor exposición, y si ya tienes VIH, mantener el tratamiento antirretroviral para llegar a indetectable.' },
+    { claves:['donde me hago la prueba', 'prueba', 'diagnostico'], texto:'Puedes solicitar la prueba de VIH de forma gratuita en tu EPS o en centros de salud pública. Es rápida, confidencial, y un diagnóstico temprano permite iniciar tratamiento en promedio 27 días después.' },
+    { claves:['tratamiento', 'tar', 'indetectable'], texto:'El tratamiento antirretroviral (TAR) reduce la carga viral hasta hacerla indetectable. Una persona indetectable no transmite el virus por vía sexual: es el principio Indetectable = Intransmisible (I=I).' },
+    { claves:['regiones', 'donde hay mas casos', 'departamentos'], texto:'La mayor concentración de casos está en la región Central (28,72%), seguida de Bogotá (22,19%) y la región Caribe (19,91%).' },
+    { claves:['hola', 'buenas'], texto:'¡Hola! Puedo contarte sobre las cifras del VIH en Colombia, cómo se transmite y cómo prevenirlo. ¿Qué te gustaría saber?' },
+    { claves:['gracias'], texto:'¡Con gusto! Recuerda que esta información es educativa; para orientación personal, consulta con un profesional de la salud o tu EPS.' }
+  ];
+
+  function normalizar(t){
+    return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[¿?¡!]/g,'').trim();
+  }
+
+  function responder(mensaje){
+    const m = normalizar(mensaje);
+    for(const r of RESPUESTAS){
+      if(r.claves.some(c => m.includes(c))) return r.texto;
+    }
+    return 'No tengo información específica sobre eso todavía. Puedes preguntarme por las cifras, la transmisión, la prevención o el tratamiento del VIH en Colombia.';
+  }
+
+  function agregarMensaje(texto, tipo){
+    const log = document.getElementById('chatLog');
+    const div = document.createElement('div');
+    div.className = 'msg ' + tipo;
+    div.textContent = texto;
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  function enviarMensaje(){
+    const input = document.getElementById('chatInput');
+    const texto = input.value.trim();
+    if(!texto) return;
+    agregarMensaje(texto, 'user');
+    input.value = '';
+    setTimeout(() => agregarMensaje(responder(texto), 'bot'), 250);
+  }
+
+  function preguntaRapida(texto){
+    agregarMensaje(texto, 'user');
+    setTimeout(() => agregarMensaje(responder(texto), 'bot'), 250);
+  }
+
+  agregarMensaje('¡Hola! Soy el asistente de esta página. Pregúntame sobre las cifras del VIH en Colombia, cómo se transmite o cómo prevenirlo.', 'bot');
+</script>
+
+
+
+
+
+
+</html> 
